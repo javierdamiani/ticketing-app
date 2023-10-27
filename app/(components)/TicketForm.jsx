@@ -3,7 +3,6 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 const TicketForm = ({ ticket }) => {
-  console.log(ticket, 'hola desde ticket');
   const EDITMODE = ticket && ticket._id === 'new' ? false : true;
   const router = useRouter();
   const startingTicketData = {
